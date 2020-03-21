@@ -1,4 +1,6 @@
-const socket = require("socket.io-client")("http://127.0.0.1:8080");
+require('dotenv/config')
+const servername = `http://${process.env.HOSTNAME}:${process.env.HTTPPORT}`
+const socket = require("socket.io-client")(servername);
 let name = "";
 const input = require("readline").createInterface({
   input: process.stdin,

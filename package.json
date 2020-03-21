@@ -1,7 +1,11 @@
 {
   "name": "nodechat",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
+  "scripts": {
+    "client":"node client",
+    "server":"node server"
+  },
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
